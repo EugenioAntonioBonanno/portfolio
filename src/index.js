@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import "./tailwind.output.css";
+
+function App() {
+  return (
+    <div className="App bg-blue-500">
+      <div className='mt-10'> I AM ALIVE</div>
+    </div>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>
