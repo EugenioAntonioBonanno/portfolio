@@ -1,6 +1,5 @@
 import React from'react';
 import fullStackImage from '../assets/full-stack.png'
-import hireFullstackImage from '../assets/hire-fullstack-image.png'
 
 const Header = () => {
   return (
@@ -8,9 +7,11 @@ const Header = () => {
 
       <div class="flex w-full max-w-screen-xl items-center justify-between px-4 py-3 sm:px-4 sm:py-3">
         <div>
-          <div class="logo"> 
-            <img src={fullStackImage} alt="full-stack" className="h-9" ></img>
-          </div>
+          <img src={fullStackImage} alt="full-stack" className="inline h-9" ></img>
+          <img src={fullStackImage} alt="full-stack" className="inline h-9" ></img>
+          <img src={fullStackImage} alt="full-stack" className="inline h-9" ></img>
+
+
         </div>
 
         <div class="sm:hidden">
