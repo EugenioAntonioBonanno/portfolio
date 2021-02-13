@@ -1,5 +1,6 @@
 import React from'react';
 import fullStackImage from '../assets/full-stack.png'
+import resume from '../assets/gino_resume.pdf';
 
 const Header = () => {
   return (
@@ -21,10 +22,10 @@ const Header = () => {
         </div>
 
         <nav className=''>
-          <span className='px-2 mx-1'>item</span>
-          <span className='px-2 mx-1'>item</span>
-          <span className='px-2 mx-1'>item</span>
-          <span className='px-2 mx-1'>item</span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><a href={resume} target="_blank" rel="noopener noreferrer">Resume</a></span>
         </nav>
 
       </div>
