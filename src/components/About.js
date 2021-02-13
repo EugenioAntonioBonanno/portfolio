@@ -10,6 +10,7 @@ const About = () => {
       </div>
       <div>
         <h2 className='text-2xl font-bold text-gray-800'>Gino Bonanno </h2>
+        
       </div>
 
     </div>
