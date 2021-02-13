@@ -4,7 +4,7 @@ import About from './About';
 
 function App() {
   return (
-    <div>
+    <div className="max-w-screen-xl">
       <Header />
       <About />
     </div>
