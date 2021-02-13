@@ -4,12 +4,12 @@ import fullStackImage from '../assets/full-stack.png'
 const Header = () => {
   return (
     <header class="bg-blue-100 py-2 w-screen shadow-md flex justify-center items-center">
-      <div class="flex w-full max-w-screen-xl items-center justify-between px-4 py-3 sm:px-4 sm:py-3">
+      <div class="flex w-full max-w-screen-xl items-center justify-between px-4 sm:px-4">
 
         <div>
+          <img src={fullStackImage} alt="full-stack" className="inline h-8" ></img>
           <img src={fullStackImage} alt="full-stack" className="inline h-9" ></img>
-          <img src={fullStackImage} alt="full-stack" className="inline h-9" ></img>
-          <img src={fullStackImage} alt="full-stack" className="inline h-9" ></img>
+          <img src={fullStackImage} alt="full-stack" className="inline h-8" ></img>
         </div>
 
         <div class="sm:hidden">
