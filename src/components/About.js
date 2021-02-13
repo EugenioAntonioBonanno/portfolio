@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className='flex'>
       <div class="logo"> 
-        <img src={hireFullstackImage} alt="full-stack" ></img>
+        <img src={hireFullstackImage} alt="full-stack" className='max-h-96'></img>
       </div>
       <div>
         <h2 className='text-2xl font-bold text-gray-800'>Gino Bonanno </h2>
