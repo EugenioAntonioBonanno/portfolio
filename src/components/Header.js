@@ -8,9 +8,9 @@ const Header = () => {
       <div class="flex w-full max-w-screen-xl items-center justify-between px-4 sm:px-4">
 
         <div>
-          <img src={fullStackImage} alt="full-stack" className="inline h-8" ></img>
-          <img src={fullStackImage} alt="full-stack" className="inline h-9" ></img>
-          <img src={fullStackImage} alt="full-stack" className="inline h-8" ></img>
+          <img src={fullStackImage} alt="full-stack" className="inline h-8"></img>
+          <img src={fullStackImage} alt="full-stack" className="inline h-9"></img>
+          <img src={fullStackImage} alt="full-stack" className="inline h-8"></img>
         </div>
 
         <div class="sm:hidden">

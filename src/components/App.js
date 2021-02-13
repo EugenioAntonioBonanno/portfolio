@@ -4,10 +4,15 @@ import About from './About';
 
 function App() {
   return (
-    <div className="max-w-screen-xl">
+    <div>
       <Header />
-      <About />
+      <main className="w-full flex justify-center">
+        <div className='max-w-screen-3xl'>
+          <About />
+        </div>
+      </main>
     </div>
+    
   );
 }
 
