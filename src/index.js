@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from './components/header';
-import About from './components/about';
+import Header from './components/Header';
+import About from './components/About';
 
 function App() {
   return (

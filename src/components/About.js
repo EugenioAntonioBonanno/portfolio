@@ -1,5 +1,6 @@
 import React from 'react';
-import hireFullstackImage from '../assets/hire-fullstack-image.png'
+import ProgressBar from './ProgressBar';
+import hireFullstackImage from '../assets/hire-fullstack-image.png';
 
 
 const About = () => {
@@ -10,7 +11,9 @@ const About = () => {
       </div>
       <div>
         <h2 className='text-2xl font-bold text-gray-800'>Gino Bonanno </h2>
-        
+        <div>
+          <ProgressBar />
+        </div>
       </div>
 
     </div>
