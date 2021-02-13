@@ -12,7 +12,10 @@ const About = () => {
       <div>
         <h2 className='text-2xl font-bold text-gray-800'>Gino Bonanno </h2>
         <div>
-          <ProgressBar />
+          <ProgressBar 
+            percentage='75' 
+            skill='CSS'
+          />
         </div>
       </div>
 
