@@ -8,9 +8,9 @@ const Header = () => {
       <div class="flex w-full max-w-screen-xl items-center justify-between px-4 sm:px-4">
 
         <div>
-          <img src={fullStackImage} alt="full-stack" className="inline h-8"></img>
+          <img src={fullStackImage} alt="full-stack" className="hidden sm:inline h-8"></img>
           <img src={fullStackImage} alt="full-stack" className="inline h-9"></img>
-          <img src={fullStackImage} alt="full-stack" className="inline h-8"></img>
+          <img src={fullStackImage} alt="full-stack" className="hidden sm:inline h-8"></img>
         </div>
 
         <div class="sm:hidden">
@@ -21,7 +21,7 @@ const Header = () => {
           </button>
         </div>
 
-        <nav className=''>
+        <nav className='hidden sm:block'>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>

@@ -14,16 +14,16 @@ const About = () => {
       <div className='flex justify-center'>
         <div className='flex w-full mx-16 my-12 justify-around'>
           <SvgInfo
-            svg={<Breifcase/>}
+              svg={<Shield />}
           />
           <SvgInfo
-            svg={<Lightning/>}
+            svg={<Breifcase/>}
           />
           <SvgInfo
             svg={<Mobile />}
           />
           <SvgInfo
-            svg={<Shield />}
+            svg={<Lightning/>}
           />
         </div>
       </div>
@@ -74,7 +74,6 @@ const About = () => {
         </div>
       </div>
     </div>
-    
   )
 }
 
