@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className='w-full max-w-lg'>
           <div className=''>
-            <h2 className='text-2xl font-bold text-gray-800'>Gino Bonanno </h2>
+            <h2 className='text-2xl font-bold text-gray-800'>Gino Bonanno</h2>
             <div className='ml-3 shadow-sm'>
               <ProgressBar 
                 percentage='85' 
@@ -47,6 +47,11 @@ const About = () => {
               <ProgressBar 
                 percentage='80' 
                 skill='HTML'
+              />
+
+              <ProgressBar 
+                percentage='99' 
+                skill='Desire'
               />
             </div>
             
