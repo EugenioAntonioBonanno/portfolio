@@ -2,6 +2,10 @@ import React from 'react';
 import ProgressBar from './ProgressBar';
 import hireFullstackImage from '../assets/hire-fullstack-image.png';
 import SvgInfo from './SvgInfo';
+import Breifcase from './svgs/Briefcase';
+import Lightning from './svgs/Lightning';
+import Mobile from './svgs/Mobile';
+import Shield from './svgs/Shield';
 
 
 const About = () => {
@@ -9,12 +13,22 @@ const About = () => {
     <div>
       <div className='flex justify-center'>
         <div className='flex w-full mx-16 my-12 justify-around'>
-          <SvgInfo />
-          <SvgInfo />
-          <SvgInfo />
-          <SvgInfo />
+          <SvgInfo
+            svg={<Breifcase/>}
+          />
+          <SvgInfo
+            svg={<Lightning/>}
+          />
+          <SvgInfo
+            svg={<Mobile />}
+          />
+          <SvgInfo
+            svg={<Shield />}
+          />
         </div>
       </div>
+
+
 
       <div className='block md:flex md:justify-center mt-12'>
         <div> 
