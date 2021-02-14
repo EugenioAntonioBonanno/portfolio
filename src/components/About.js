@@ -35,7 +35,7 @@ const About = () => {
           <SvgInfo
             svg={<Lightning
                   color={svgColor}
-                  title={'Fast'}
+                  title={'Speedy'}
                 />}
           />
         </div>
