@@ -25,7 +25,8 @@ const Header = () => {
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'>item</span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><a href={resume} target="_blank" rel="noopener noreferrer">Resume</a></span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><a href={resume} target="_blank" 
+                rel="noopener noreferrer">Resume</a></span>
         </nav>
 
       </div>

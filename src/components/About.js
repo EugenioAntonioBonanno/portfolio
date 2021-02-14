@@ -9,21 +9,30 @@ import Shield from './svgs/Shield';
 
 
 const About = () => {
+  let svgColor = 'indigo-400'
   return (
     <div>
       <div className='flex justify-center'>
         <div className='flex w-full mx-16 my-12 justify-around'>
           <SvgInfo
-              svg={<Shield />}
+            svg={<Shield
+                  color={svgColor}
+                />}
           />
           <SvgInfo
-            svg={<Breifcase/>}
+            svg={<Breifcase
+                  color={svgColor}
+                />}
           />
           <SvgInfo
-            svg={<Mobile />}
+            svg={<Mobile
+                  color={svgColor}
+                />}
           />
           <SvgInfo
-            svg={<Lightning/>}
+            svg={<Lightning
+                  color={svgColor}
+                />}
           />
         </div>
       </div>
