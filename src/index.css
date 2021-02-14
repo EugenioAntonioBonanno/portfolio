@@ -1,5 +1,13 @@
+/* TailwindCSS imports */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* CUSTOM CSS CLASSES */
 
+.inset-top-center {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

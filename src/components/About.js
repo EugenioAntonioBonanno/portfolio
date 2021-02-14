@@ -17,21 +17,25 @@ const About = () => {
           <SvgInfo
             svg={<Shield
                   color={svgColor}
+                  title={'Secure'}
                 />}
           />
           <SvgInfo
             svg={<Breifcase
                   color={svgColor}
+                  title={'Professional'}
                 />}
           />
           <SvgInfo
             svg={<Mobile
                   color={svgColor}
+                  title={'Reactive'}
                 />}
           />
           <SvgInfo
             svg={<Lightning
                   color={svgColor}
+                  title={'Fast'}
                 />}
           />
         </div>
