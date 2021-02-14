@@ -19,24 +19,28 @@ const About = () => {
                   color={svgColor}
                   title={'Secure'}
                 />}
+            content={'Secure web applications so you can your users can get a good nights rest.'}
           />
           <SvgInfo
             svg={<Breifcase
                   color={svgColor}
                   title={'Professional'}
                 />}
+            content={'Professional grade code. Clean, clear and ready to be extended.'}
           />
           <SvgInfo
             svg={<Mobile
                   color={svgColor}
                   title={'Reactive'}
                 />}
+            content={'Application that just work, regardless of screen size.'}
           />
           <SvgInfo
             svg={<Lightning
                   color={svgColor}
                   title={'Speedy'}
                 />}
+          content={'Fast and response applications. Spend more time doing and less time waiting'}
           />
         </div>
       </div>
