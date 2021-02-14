@@ -1,5 +1,5 @@
 import React from 'react';
-import WriteUp from './svgs/WriteUp';
+import WriteUp from './WriteUp';
 
 const SvgInfo = (props) => {
   return (
@@ -16,4 +16,4 @@ const SvgInfo = (props) => {
 };
 
 
-export default SvgInfo
+export default SvgInfo;
