@@ -1,5 +1,5 @@
 import React from 'react';
-import WriteUp from '../components/svgs/WriteUp';
+import WriteUp from './svgs/WriteUp';
 
 const SvgInfo = (props) => {
   return (
