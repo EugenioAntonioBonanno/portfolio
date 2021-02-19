@@ -4,7 +4,7 @@
       content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 
       options: {
-        safelist: ['text-indigo-400']
+        safelist: ['text-indigo-400', 'bg-green-400', 'rounded', 'font-semibold', 'text-gray-600']
       }
     } ,
      darkMode: false, // or 'media' or 'class'

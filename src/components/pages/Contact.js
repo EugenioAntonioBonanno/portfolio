@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 const Contact = () => {
   const { register, errors, handleSubmit, reset } = useForm();
 
+
   const toastifySuccess = () => {
     toast('Form sent!', {
       position: 'bottom-right',
@@ -15,15 +16,13 @@ const Contact = () => {
       closeOnClick: true,
       pauseOnHover: true,  
       draggable: false,
-      className: 'submit-feedback success',
+      className: 'bg-green-400 rounded font-semibold text-gray-600',
       toastId: 'notifyToast'
     });
   };
 
   const onSubmit = async (data) => {
-    console.log('Name: ', data.name);
-    console.log('Email: ', data.email);
-    console.log('Message: ', data.message);
+ 
     try {
       const templateParams = {
         name: data.name,
@@ -365,6 +364,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      <ToastContainer />
 
       <section>
 
