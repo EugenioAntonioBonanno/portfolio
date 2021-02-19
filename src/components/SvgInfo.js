@@ -3,7 +3,7 @@ import WriteUp from './WriteUp';
 
 const SvgInfo = (props) => {
   return (
-    <div className='w-52'>
+    <div className='w-52 mt-10'>
       <div className="w-full inline-block text-{props.color}-600">
         {props.svg}
       </div>
@@ -11,7 +11,6 @@ const SvgInfo = (props) => {
         content={props.content}
       />
     </div>
-  
   )
 };
 

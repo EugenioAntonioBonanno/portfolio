@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div>
       <div className='flex justify-center'>
-        <div className='flex w-full mx-16 my-12 justify-around'>
+        <div className='w-full grid grid-cols-2 md:grid-cols-4 justify-items-center mt-24'>
           <SvgInfo
             svg={<Shield
                   color={svgColor}
