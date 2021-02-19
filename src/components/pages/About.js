@@ -12,39 +12,6 @@ const About = () => {
   let svgColor = 'indigo-400'
   return (
     <div>
-      <div className='flex justify-center'>
-        <div className='w-full grid grid-cols-2 lg:grid-cols-4 justify-items-center md:mt-24'>
-          <SvgInfo
-            svg={<Shield
-                  color={svgColor}
-                  title={'Secure'}
-                />}
-            content={'Secure web applications so you and your users can get a good nights rest.'}
-          />
-          <SvgInfo
-            svg={<Breifcase
-                  color={svgColor}
-                  title={'Professional'}
-                />}
-            content={'Professional grade code. Clean, clear and ready to be extended.'}
-          />
-          <SvgInfo
-            svg={<Mobile
-                  color={svgColor}
-                  title={'Responsive'}
-                />}
-            content={'Application that just work, regardless of screen size.'}
-          />
-          <SvgInfo
-            svg={<Lightning
-                  color={svgColor}
-                  title={'Speedy'}
-                />}
-            content={'Fast and reactive applications. Spend more time doing and less time waiting.'}
-          />
-        </div>
-      </div>
-
       <div className='block md:flex md:justify-center mx-3 mt-12'>
         <div> 
           <img src={hireFullstackImage} alt="full-stack" className='max-h-96'></img>
@@ -83,9 +50,40 @@ const About = () => {
                 skill='Desire'
               />
             </div>
-            
           </div>
+        </div>
+      </div>
 
+      <div className='flex justify-center'>
+        <div className='w-full grid grid-cols-2 lg:grid-cols-4 justify-items-center md:mt-24'>
+          <SvgInfo
+            svg={<Shield
+                  color={svgColor}
+                  title={'Secure'}
+                />}
+            content={'Secure web applications so you and your users can get a good nights rest.'}
+          />
+          <SvgInfo
+            svg={<Breifcase
+                  color={svgColor}
+                  title={'Professional'}
+                />}
+            content={'Professional grade code. Clean, clear and ready to be extended.'}
+          />
+          <SvgInfo
+            svg={<Mobile
+                  color={svgColor}
+                  title={'Responsive'}
+                />}
+            content={'Application that just work, regardless of screen size.'}
+          />
+          <SvgInfo
+            svg={<Lightning
+                  color={svgColor}
+                  title={'Speedy'}
+                />}
+            content={'Fast and reactive applications. Spend more time doing and less time waiting.'}
+          />
         </div>
       </div>
     </div>
