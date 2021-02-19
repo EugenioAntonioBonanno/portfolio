@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div>
       <div className='flex justify-center'>
-        <div className='w-full grid grid-cols-2 md:grid-cols-4 justify-items-center mt-24'>
+        <div className='w-full grid grid-cols-2 lg:grid-cols-4 justify-items-center mt-24'>
           <SvgInfo
             svg={<Shield
                   color={svgColor}
@@ -40,7 +40,7 @@ const About = () => {
                   color={svgColor}
                   title={'Speedy'}
                 />}
-          content={'Fast and response applications. Spend more time doing and less time waiting'}
+            content={'Fast and response applications. Spend more time doing and less time waiting'}
           />
         </div>
       </div>
@@ -92,6 +92,6 @@ const About = () => {
       </div>
     </div>
   )
-}
+};
 
 export default About;
