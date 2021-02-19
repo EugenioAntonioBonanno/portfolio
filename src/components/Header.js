@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import fullStackImage from '../assets/full-stack.png'
+import fullStackImage from '../assets/full-stack.png';
 import resume from '../assets/gino_resume.pdf';
 
 const Header = () => {
@@ -36,7 +36,7 @@ const Header = () => {
       </div>
     </header>
   )
-}
+};
 
 export default Header;
 

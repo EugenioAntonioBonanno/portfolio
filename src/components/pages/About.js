@@ -19,7 +19,7 @@ const About = () => {
                   color={svgColor}
                   title={'Secure'}
                 />}
-            content={'Secure web applications so you can your users can get a good nights rest.'}
+            content={'Secure web applications so you and your users can get a good nights rest.'}
           />
           <SvgInfo
             svg={<Breifcase
@@ -40,7 +40,7 @@ const About = () => {
                   color={svgColor}
                   title={'Speedy'}
                 />}
-            content={'Fast and reactive applications. Spend more time doing and less time waiting'}
+            content={'Fast and reactive applications. Spend more time doing and less time waiting.'}
           />
         </div>
       </div>
