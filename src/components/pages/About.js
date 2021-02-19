@@ -1,11 +1,11 @@
 import React from 'react';
-import ProgressBar from './ProgressBar';
-import hireFullstackImage from '../assets/hire-fullstack-image.png';
-import SvgInfo from './SvgInfo';
-import Breifcase from './svgs/Briefcase';
-import Lightning from './svgs/Lightning';
-import Mobile from './svgs/Mobile';
-import Shield from './svgs/Shield';
+import ProgressBar from '../ProgressBar';
+import hireFullstackImage from '../../assets/hire-fullstack-image.png';
+import SvgInfo from '../SvgInfo';
+import Breifcase from '../svgs/Briefcase';
+import Lightning from '../svgs/Lightning';
+import Mobile from '../svgs/Mobile';
+import Shield from '../svgs/Shield';
 
 
 const About = () => {
