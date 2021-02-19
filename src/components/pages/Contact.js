@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
@@ -6,10 +6,13 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 const Contact = () => {
   const { register, errors, handleSubmit, reset } = useForm();
+  const [disabled, setDisabled] = useState(false);
 
+
+// Handler for on click
 
   const toastifySuccess = () => {
-    toast('Form sent!', {
+    toast('Message sent', {
       position: 'bottom-right',
       autoClose: 5000,
       hideProgressBar: true,
@@ -22,7 +25,7 @@ const Contact = () => {
   };
 
   const onSubmit = async (data) => {
- 
+    setDisabled(true);
     try {
       const templateParams = {
         name: data.name,
@@ -36,6 +39,7 @@ const Contact = () => {
         templateParams,
         process.env.REACT_APP_USER_ID
       );
+      setDisabled(false)
       reset();
       toastifySuccess();
     } catch (e) {
@@ -358,8 +362,8 @@ const Contact = () => {
             {errors.message && <span className='ml-3 text-red-400'>Please enter a message</span>}
           </div>
           <div className="mt-8">
-            <button type='submit' className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-              Send Message
+            <button type='submit' disabled={disabled} className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+              {disabled ? 'Sending...' : 'Send'}
             </button>
           </div>
         </form>
