@@ -1,6 +1,17 @@
 import React from 'react'
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
+  const { register, errors, handleSubmit, reset } = useForm();
+
+  const onSubmit = async (data) => {
+    console.log('Name: ', data.name);
+    console.log('Email: ', data.email);
+    console.log('Subject: ', data.subject);
+    console.log('Message: ', data.message);
+  };
+
+
   return (
     <>
       <div className="text-center w-full">
@@ -267,25 +278,59 @@ const Contact = () => {
             </svg>
           </div>
         </div>
-        <div className>
+        <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
           <div>
             <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" placeholder />
+            <input
+              type='text'
+              name='name'
+              ref={register({
+                required: { value: true, message: 'Please enter your name' },
+                maxLength: {
+                  value: 30,
+                  message: 'Please use 30 characters or less'
+                }
+              })}
+              className='w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+              placeholder='John Smith'
+            ></input>
+            {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
           </div>
           <div className="mt-8">
             <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" />
+            <input
+              type='email'
+              name='email'
+              ref={register({
+                required: true,
+                pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+              })}
+              className='w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+              placeholder='your_email@domain.com'
+            ></input>
+            {errors.email && (
+              <span className='errorMessage'>Please enter a valid email address</span>
+            )}
           </div>
           <div className="mt-8">
             <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
-            <textarea className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" defaultValue={""} />
+            <textarea
+              rows={3}
+              name='message'
+              ref={register({
+                required: true
+              })}
+              className='w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+              placeholder='Message'
+            ></textarea>
+            {errors.message && <span className='errorMessage'>Please enter a message</span>}
           </div>
           <div className="mt-8">
             <button className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
               Send Message
             </button>
           </div>
-        </div>
+        </form>
       </div>
 
       <section>
