@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div>
       <div className='flex justify-center'>
-        <div className='w-full grid grid-cols-2 lg:grid-cols-4 justify-items-center mt-24'>
+        <div className='w-full grid grid-cols-2 lg:grid-cols-4 justify-items-center md:mt-24'>
           <SvgInfo
             svg={<Shield
                   color={svgColor}
@@ -47,7 +47,7 @@ const About = () => {
 
 
 
-      <div className='block md:flex md:justify-center mt-12'>
+      <div className='block md:flex md:justify-center mx-3 mt-12'>
         <div> 
           <img src={hireFullstackImage} alt="full-stack" className='max-h-96'></img>
         </div>
