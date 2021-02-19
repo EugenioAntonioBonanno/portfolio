@@ -11,13 +11,14 @@ function App() {
     <div>
       <BrowserRouter>
         <div>
-        <Header />
-        <main className="w-full flex justify-center">
-          <div className='w-full max-w-screen-2xl'>
-            <About />
-          </div>
-        </main>
-
+          <Header />
+          <main className="w-full flex justify-center">
+            <div className='w-full max-w-screen-2xl'>
+              <Route path='/' exact component={About} />
+              <Route path='/contact' exact component={Contact} />
+              <Route path='/projects' exact component={Projects} />
+            </div>
+          </main>
         </div>
       </BrowserRouter>
     </div>
