@@ -7,7 +7,6 @@ const Contact = () => {
   const onSubmit = async (data) => {
     console.log('Name: ', data.name);
     console.log('Email: ', data.email);
-    console.log('Subject: ', data.subject);
     console.log('Message: ', data.message);
   };
 
@@ -32,7 +31,7 @@ const Contact = () => {
         <div className="flex flex-col justify-between">
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
-            <div className="text-gray-700 mt-8">
+            <div className="text-gray-700 ml-3 mt-8">
               Hate forms? Send me an <span className="underline"><a href="mailto:eugenioantoniobonanno@gmail.com">e-mail</a></span> instead.
             </div>
           </div>
@@ -291,10 +290,10 @@ const Contact = () => {
                   message: 'Please use 30 characters or less'
                 }
               })}
-              className='w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+              className='w-full bg-gray-300 text-gray-900 my-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
               placeholder='John Smith'
             ></input>
-            {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
+            {errors.name && <span className='ml-3 text-red-400'>{errors.name.message}</span>}
           </div>
           <div className="mt-8">
             <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
@@ -305,11 +304,11 @@ const Contact = () => {
                 required: true,
                 pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
               })}
-              className='w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+              className='w-full bg-gray-300 text-gray-900 my-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
               placeholder='your_email@domain.com'
             ></input>
             {errors.email && (
-              <span className='errorMessage'>Please enter a valid email address</span>
+              <span className='ml-3 text-red-400'>Please enter a valid email address</span>
             )}
           </div>
           <div className="mt-8">
@@ -320,13 +319,13 @@ const Contact = () => {
               ref={register({
                 required: true
               })}
-              className='w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+              className='w-full h-32 bg-gray-300 text-gray-900 my-1 p-3 rounded-lg focus:outline-none focus:shadow-outline'
               placeholder='Message'
             ></textarea>
-            {errors.message && <span className='errorMessage'>Please enter a message</span>}
+            {errors.message && <span className='ml-3 text-red-400'>Please enter a message</span>}
           </div>
           <div className="mt-8">
-            <button className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            <button type='submit' className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
               Send Message
             </button>
           </div>
