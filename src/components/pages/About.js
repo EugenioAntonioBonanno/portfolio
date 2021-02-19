@@ -31,7 +31,7 @@ const About = () => {
           <SvgInfo
             svg={<Mobile
                   color={svgColor}
-                  title={'Reactive'}
+                  title={'Responsive'}
                 />}
             content={'Application that just work, regardless of screen size.'}
           />
@@ -40,12 +40,10 @@ const About = () => {
                   color={svgColor}
                   title={'Speedy'}
                 />}
-            content={'Fast and response applications. Spend more time doing and less time waiting'}
+            content={'Fast and reactive applications. Spend more time doing and less time waiting'}
           />
         </div>
       </div>
-
-
 
       <div className='block md:flex md:justify-center mx-3 mt-12'>
         <div> 
