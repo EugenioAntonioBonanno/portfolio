@@ -24,13 +24,13 @@ const About = () => {
             <img src={me} alt="full-stack" className='max-h-96'></img>
           </div>
           <div className='w-full flex mb-5 justify-center'>
-            <h1 className='text-5xl font-semibold text-gray-700'>Who am I?</h1>
+            <h1 className='text-5xl font-semibold text-gray-600'>Who am I?</h1>
           </div>
           <div className='w-full flex mx-2 justify-center'>
-            <p className='text-center text-lg text-gray-800'>
+            <p className='text-center text-lg text-gray-600'>
               I am a full-stack developer with a genuine love for coding (and my laptop). I enjoy solving interesting problems,
               and building user friendly web applications. If that sounds like something you need help with please dont hesistate to 
-              <span> </span><Link to='/contact' className="inline underline text-indigo-700">contact me</Link>.
+              <span> </span><Link to='/contact' className="inline underline text-indigo-800">contact me</Link>.
             </p>
           </div>
           
@@ -39,7 +39,7 @@ const About = () => {
 
         <div className='w-full max-w-lg'>
           <div className=''>
-            <h2 className='text-4xl my-5 font-bold text-gray-700'>Gino Bonanno</h2>
+            <h2 className='text-4xl my-5 font-bold text-gray-600'>My Skills</h2>
             <div className='ml-3 shadow-sm'>
               <ProgressBar 
                 percentage='80' 
@@ -95,30 +95,30 @@ const About = () => {
           <SvgInfo
             svg={<Shield
                   color={svgColor}
-                  title={'Secure'}
                 />}
             content={'Secure web applications so you and your users can get a good nights rest.'}
+            title={'Secure'}
           />
           <SvgInfo
             svg={<Breifcase
                   color={svgColor}
-                  title={'Professional'}
                 />}
             content={'Professional grade code. Clean, clear and ready to be extended.'}
+            title={'Professional'}
           />
           <SvgInfo
             svg={<Mobile
                   color={svgColor}
-                  title={'Responsive'}
                 />}
             content={'Application that just work, regardless of screen size.'}
+            title={'Responsive'}
           />
           <SvgInfo
             svg={<Lightning
                   color={svgColor}
-                  title={'Speedy'}
                 />}
             content={'Fast and reactive applications. Spend more time doing and less time waiting.'}
+            title={'Speedy'}
           />
         </div>
       </div>

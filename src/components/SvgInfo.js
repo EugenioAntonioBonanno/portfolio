@@ -9,6 +9,7 @@ const SvgInfo = (props) => {
       </div>
       < WriteUp
         content={props.content}
+        title={props.title}
       />
     </div>
   )

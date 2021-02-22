@@ -11,6 +11,7 @@ const Modal = ({ handleClose, modal, children }) => {
           <button className='float-right' type="button" onClick={handleClose}>
               Close
           </button>
+        
           {children}
         </section>
       </div>
