@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
             <div className='w-full max-w-screen-2xl'>
               <Route path='/' exact component={About} />
               <Route path='/contact' exact component={Contact} />
-              <Route path='/projects' exact component={Projects} />
+              <Route path='/experience' exact component={Experience} />
             </div>
           </main>
         </div>

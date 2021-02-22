@@ -47,7 +47,7 @@ const Header = () => {
 
         <nav className='hidden sm:block'>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link to="/">About</Link></span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link to="/projects">Portfolio</Link></span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link to="/experience">Experience</Link></span>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link to="/contact">Contact</Link></span>
           <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><a href={resume} target="_blank" 
                 rel="noopener noreferrer">Resume</a></span>

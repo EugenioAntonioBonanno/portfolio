@@ -9,7 +9,7 @@ const Contact = () => {
   const [disabled, setDisabled] = useState(false);
 
 
-// Handler for on click
+// Handler for on click to show success msg
 
   const toastifySuccess = () => {
     toast('Message sent', {
