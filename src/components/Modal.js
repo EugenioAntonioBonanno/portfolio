@@ -5,12 +5,13 @@ const Modal = ({ handleClose, modal, children }) => {
 
   return (
     <div className={showHideClassName}>
-      <div className='flex my-10 justify-center'>
-        <section className="max-w-screen-2xl w-full bg-gray-200">
-          {children}
-          <button type="button" onClick={handleClose}>
-            Close
+      <div className='flex py-10 justify-center px-5'>
+
+        <section className="max-w-screen-2xl w-full px-5 bg-gray-200">
+          <button className='float-right' type="button" onClick={handleClose}>
+              Close
           </button>
+          {children}
         </section>
       </div>
     </div>

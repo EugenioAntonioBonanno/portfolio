@@ -26,8 +26,7 @@ const ImageCard = (props) => {
         <button onClick={() => setModal(true)} className='float-right'>Learn more</button>
       </div>
 
-      <Modal show={() => setModal(true)} handleClose={() => setModal(false)}>
-
+      <Modal children={props.carousel} modal={modal} show={() => setModal(true)} handleClose={() => setModal(false)}>
       </Modal>
     
     </div>

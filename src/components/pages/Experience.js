@@ -17,7 +17,7 @@ const Experience = () => {
           title = 'Trace Taiwan'
           writeUp='A web application where users can find, add, save, and edit information and photos about River traces.'
           tags={['Rails', 'JavaScript', 'Heroku', 'TailwindCSS', 'PostGres SQL', 'GoogleMapsAPI']}
-          carousel = {
+          carousel={
             <ExperienceCarousel 
               imgs={[
                 {
@@ -34,7 +34,7 @@ const Experience = () => {
         />
 
         <ImageCard
-          img = {orderMagik}
+          img={orderMagik}
           title = 'Order Magik'
           writeUp='An embedded Shopify application where users can update the fulfillment status of your orders in 
                   bulk by uploading spreadsheet (CSV) files.'
@@ -42,8 +42,8 @@ const Experience = () => {
         />
 
         <ImageCard
-          img = {launchSchool}
-          title = 'Launch School'
+          img={launchSchool}
+          title='Launch School'
           writeUp='Results oriented and heavily researched learning curriculum designed for a long-term 
                   career as a Software Engineer.'
           tags={['Mastery Based Learning', '1500 hours', 'Full-Stack Development']}
