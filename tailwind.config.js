@@ -18,17 +18,5 @@
      },
      plugins: [
        require('@tailwindcss/forms'),
-       function({ addUtilities, e, theme, variants }) {
-        const colors = theme('colors', {})
-        const decorationVariants = variants('textDecoration', [])
-  
-        const textDecorationColorUtility = _.map(colors, (color, name) => ({
-          [`.decoration-color-${e(name)}`]: {
-            textDecorationColor: `${color}`
-          }
-        }))
-  
-        addUtilities(textDecorationColorUtility, decorationVariants)
-      },
       ],
    }

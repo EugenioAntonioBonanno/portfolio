@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageCard = (props) => {
   return (
-    <div className="max-w-md w-full py-5 px-7 my-7 mx-5 bg-gray-100 rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm md:w-full py-5 px-3 md:px-7 my-7 md:mx-5 bg-gray-100 rounded overflow-hidden shadow-lg">
       <section className='flex justify-center'>
         <img src={props.img} alt='of project' className='max-h-56 px-3 py-1'></img>
       </section>
@@ -16,7 +16,7 @@ const ImageCard = (props) => {
       </div>
       <div className="px-2 pt-4 pb-2">
         {props.tags.map(function(tag) {
-          return <span className="inline-block bg-gray-200 my-1 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{tag}</span>
+          return <span className="inline-block bg-gray-200 my-1 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#{tag}</span>
         })}
       </div>
     </div>
