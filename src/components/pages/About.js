@@ -90,8 +90,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className='flex justify-center mb-5'>
-        <div className='w-full grid grid-cols-2 lg:grid-cols-4 justify-items-center md:mt-12'>
+      <div className='flex-col-1 justify-center mb-5'>
+      <h3 className='text-center text-4xl mt-10 font-bold text-gray-600'>What about my applications?</h3>
+
+        <div className='w-full grid grid-cols-2 lg:grid-cols-4 justify-items-center md:mt-5'>
           <SvgInfo
             svg={<Shield
                   color={svgColor}
