@@ -13,22 +13,24 @@ const Experience = () => {
       <ImageCard
         img = {traceOutline}
         title = 'Trace Taiwan'
-        writeUp='This is the write up'
-        tags={['Rails', 'JavaScript', 'Heroku', 'Tailwind', 'PostGres SQL']}
+        writeUp='A web application where users can find, add, save, and edit information and photos about River traces.'
+        tags={['Rails', 'JavaScript', 'Heroku', 'TailwindCSS', 'PostGres SQL', 'GoogleMapsAPI']}
       />
 
       <ImageCard
         img = {orderMagik}
         title = 'Order Magik'
-        writeUp='This is the write up'
-        tags={['gino', 'dog', 'cat']}
+        writeUp='An embedded Shopify application where users can update the fulfillment status of your orders in 
+                 bulk by uploading spreadsheet (CSV) files.'
+        tags={['Rails', 'JavaScript', 'TailwindCSS', 'Shopify','MongoDB', 'EmbeddedApp', 'SASS']}
       />
 
       <ImageCard
         img = {launchSchool}
         title = 'Launch School'
-        writeUp='This is the write up'
-        tags={['gino', 'dog', 'cat']}
+        writeUp='Results oriented and heavily researched learning curriculum designed for a long-term 
+                 career as a Software Engineer.'
+        tags={['Mastery Based Learning', '1500 hours', 'Full-Stack Development']}
       />
 
       <ImageCard
