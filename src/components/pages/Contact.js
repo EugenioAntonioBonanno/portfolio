@@ -63,7 +63,7 @@ const Contact = () => {
           </g>
         </svg>
       </div>
-      <div className="max-w-screen-xl md:mt-20 mx-3 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 md:mx-auto bg-gray-100 text-gray-800 rounded-lg shadow-lg">
+      <div className="max-w-screen-xl md:mt-20 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 md:mx-auto bg-gray-100 text-gray-800 rounded-lg shadow-lg">
         <div className="flex flex-col justify-between">
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
@@ -369,7 +369,7 @@ const Contact = () => {
       </div>
       <ToastContainer />
       <div className='flex justify-center w-full'>
-        <section className='lg:flex max-w-screen-lg w-full justify-between mt-16 lg:mt-24 mx-3'>
+        <section className='lg:flex max-w-screen-lg w-full justify-between mt-16 lg:mt-24 md:mx-3'>
 
           <div className='mb-10 lg:mb-0 flex justify-center'>
             <a href="https://stackoverflow.com/users/10235667/gino" className='hover:opacity-70'>

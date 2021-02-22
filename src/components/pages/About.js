@@ -1,6 +1,6 @@
 import React from 'react';
 import ProgressBar from '../ProgressBar';
-import hireFullstackImage from '../../assets/hire-fullstack-image.png';
+import me from '../../assets/me.png';
 import SvgInfo from '../SvgInfo';
 import Breifcase from '../svgs/Briefcase';
 import Lightning from '../svgs/Lightning';
@@ -14,7 +14,7 @@ const About = () => {
     <div>
       <div className='block md:flex md:justify-center mx-3 mt-12'>
         <div> 
-          <img src={hireFullstackImage} alt="full-stack" className='max-h-96'></img>
+          <img src={me} alt="full-stack" className='max-h-96'></img>
         </div>
         <div className='w-full max-w-lg'>
           <div className=''>

@@ -6,7 +6,6 @@ import { Carousel } from 'react-responsive-carousel';
 const ExperienceCarousel = (props) => {
   return (
     <Carousel>
-      <h1>I SHOW PHOTOS</h1>
       {props.imgs.map(function(img) {
         return (
           <div>

@@ -27,6 +27,10 @@ const Experience = () => {
                 {
                   img: hireFullstackImage,
                   writeUp: 'This is another write up to test this'
+                },
+                {
+                  img: orderMagik,
+                  writeUp: 'This is Andys slymbol'
                 }
               ]}
             />
