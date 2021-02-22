@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageCard = (props) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm my-7 mx-5 bg-gray-100 rounded overflow-hidden shadow-lg">
       <img src={props.img} alt='of project'></img>
       <div className="px-6 py-4">
         <div className="font-bold text-indigo-500 text-xl mb-2">
