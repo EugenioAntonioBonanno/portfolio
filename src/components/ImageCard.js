@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Modal from './Modal';
 
 const ImageCard = (props) => {
-  const [showModal, setModal] = useState(false);
+  const [modal, setModal] = useState(false);
 
   return (
     <div className="max-w-sm md:max-w-md md:w-full py-5 px-3 md:px-7 my-7 md:mx-5 bg-gray-100 rounded overflow-hidden shadow-lg">
@@ -22,10 +22,14 @@ const ImageCard = (props) => {
           return <span className="inline-block bg-gray-200 my-1 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#{tag}</span>
         })}
       </div>
+      <div>
+        <button onClick={() => setModal(true)} className='float-right'>Learn more</button>
+      </div>
 
-      <Modal
-      
-      />
+      <Modal show={() => setModal(true)} handleClose={() => setModal(false)}>
+
+      </Modal>
+    
     </div>
   )
 };

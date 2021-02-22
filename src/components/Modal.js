@@ -1,16 +1,18 @@
 import React from 'react';
 
-const Modal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? "modal display-block" : "modal display-none";
+const Modal = ({ handleClose, modal, children }) => {
+  const showHideClassName = modal ? "modal display-block" : "modal display-none";
 
   return (
     <div className={showHideClassName}>
-      <section className="modal-main">
-        {children}
-        <button type="button" onClick={handleClose}>
-          Close
-        </button>
-      </section>
+      <div className='flex my-10 justify-center'>
+        <section className="max-w-screen-2xl w-full bg-gray-200">
+          {children}
+          <button type="button" onClick={handleClose}>
+            Close
+          </button>
+        </section>
+      </div>
     </div>
   );
 };
