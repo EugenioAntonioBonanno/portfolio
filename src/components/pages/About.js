@@ -62,13 +62,13 @@ const About = () => {
               />
 
               <ProgressBar 
-                percentage='70' 
-                skill='CSS'
+                percentage='80' 
+                skill='HTML/CSS'
               />
               
               <ProgressBar 
-                percentage='80' 
-                skill='HTML'
+                percentage='75' 
+                skill='Tailwind'
               />
 
               <ProgressBar 
