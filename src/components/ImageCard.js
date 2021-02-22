@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageCard = (props) => {
   return (
-    <div className="max-w-sm md:w-full py-5 px-3 md:px-7 my-7 md:mx-5 bg-gray-100 rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm md:max-w-md md:w-full py-5 px-3 md:px-7 my-7 md:mx-5 bg-gray-100 rounded overflow-hidden shadow-lg">
       <section className='flex justify-center'>
         <img src={props.img} alt='of project' className='max-h-56 px-3 py-1'></img>
       </section>

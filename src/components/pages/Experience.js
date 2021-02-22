@@ -1,5 +1,6 @@
 import React from 'react'
 import ImageCard from '../ImageCard';
+import ExperienceCarousel from '../Carousel';
 
 import hireFullstackImage from '../../assets/hire-fullstack-image.png';
 import traceOutline from '../../assets/traceoutline.png';
@@ -46,6 +47,19 @@ const Experience = () => {
           title = 'THIS IS THE TITLE'
           writeUp='This is the write up'
           tags={['gino', 'dog', 'cat']}
+        />
+
+        <ExperienceCarousel 
+          imgs={[
+            {
+              img: traceOutline,
+              writeUp: 'THIS IS THE OUTLINE OF THE TRACE'
+            },
+            {
+              img: hireFullstackImage,
+              writeUp: 'This is another write up to test this'
+            }
+          ]}
         />
    
       </div>
