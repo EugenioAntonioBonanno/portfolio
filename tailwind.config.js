@@ -1,4 +1,6 @@
   // tailwind.config.js
+  const _ = require('lodash');
+  
   module.exports = {
     purge: {
       content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
@@ -15,6 +17,18 @@
        extend: {},
      },
      plugins: [
-       require('@tailwindcss/forms')
+       require('@tailwindcss/forms'),
+       function({ addUtilities, e, theme, variants }) {
+        const colors = theme('colors', {})
+        const decorationVariants = variants('textDecoration', [])
+  
+        const textDecorationColorUtility = _.map(colors, (color, name) => ({
+          [`.decoration-color-${e(name)}`]: {
+            textDecorationColor: `${color}`
+          }
+        }))
+  
+        addUtilities(textDecorationColorUtility, decorationVariants)
+      },
       ],
    }
