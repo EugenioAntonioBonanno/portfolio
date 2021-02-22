@@ -14,9 +14,9 @@ const ImageCard = (props) => {
           {props.writeUp}
         </p>
       </div>
-      <div className="px-6 py-4">
+      <div className="px-2 pt-4 pb-2">
         {props.tags.map(function(tag) {
-          return <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{tag}</span>
+          return <span className="inline-block bg-gray-200 my-1 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#{tag}</span>
         })}
       </div>
     </div>

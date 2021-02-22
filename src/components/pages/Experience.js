@@ -14,19 +14,19 @@ const Experience = () => {
         img = {traceOutline}
         title = 'Trace Taiwan'
         writeUp='This is the write up'
-        tags={['gino', 'dog', 'cat']}
+        tags={['Rails', 'JavaScript', 'Heroku', 'Tailwind', 'PostGres SQL']}
       />
 
       <ImageCard
         img = {orderMagik}
-        title = 'THIS IS THE TITLE'
+        title = 'Order Magik'
         writeUp='This is the write up'
         tags={['gino', 'dog', 'cat']}
       />
 
       <ImageCard
         img = {launchSchool}
-        title = 'THIS IS THE TITLE'
+        title = 'Launch School'
         writeUp='This is the write up'
         tags={['gino', 'dog', 'cat']}
       />
