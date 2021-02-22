@@ -46,10 +46,10 @@ const Header = () => {
         </div>
 
         <nav className='hidden sm:block'>
-          <span className='text-gray-600 font-semibold px-2 mx-1 text-decoration-indigo hover:underline'><Link className='text-decoration-indigo' to="/">About</Link></span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 text-decoration-indigo hover:underline'><Link to="/experience">Experience</Link></span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 text-decoration-indigo hover:underline'><Link to="/contact">Contact</Link></span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 text-decoration-indigo hover:underline'><a href={resume} target="_blank" 
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/">About</Link></span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/experience">Experience</Link></span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/contact">Contact</Link></span>
+          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><a className='text-decoration-indigo' href={resume} target="_blank" 
                 rel="noopener noreferrer">Resume</a></span>
         </nav>
 

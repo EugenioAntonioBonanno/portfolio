@@ -13,5 +13,6 @@
 }
 
 .text-decoration-indigo {
-  text-decoration-color: rgba(99, 102, 241)
+  text-decoration-color: rgba(99, 102, 241);
+  text-decoration-thickness: 2px;
 }
