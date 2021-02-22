@@ -7,7 +7,7 @@ const ImageCard = (props) => {
         <img src={props.img} alt='of project' className='max-h-56 px-3 py-1'></img>
       </section>
       <div className="px-4 py-5">
-        <div className="font-bold text-indigo-500 text-xl mb-2">
+        <div className="font-bold text-indigo-600 text-xl mb-2">
           {props.title}
         </div>
         <p className="text-gray-700 ml-2 text-base">

@@ -11,7 +11,7 @@ const Header = () => {
         <div>
           <Link to='/' className="flex text-gray-700">
 
-           <svg xmlns="http://www.w3.org/2000/svg" version="1.0" height="45" viewBox="0 0 888.000000 980.000000" preserveAspectRatio="xMidYMid meet">
+           <svg xmlns="http://www.w3.org/2000/svg" className='hover:opacity-70' version="1.0" height="45" viewBox="0 0 888.000000 980.000000" preserveAspectRatio="xMidYMid meet">
               <g transform="translate(0.000000,980.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
               <path d="M2895 9027 c-2206 -1100 -2856 -1428 -2852 -1441 5 -16 430 -231 2499 -1267 l1898 -949 2217 1109 2218 1108 -2213 1107 c-1216 608 -2213 1106 -2214 1106 -2 0 -700 -348 -1553 -773z"/>
               <path d="M5650 5300 c-657 -329 -1201 -599 -1207 -599 -7 -1 -390 187 -850 417 -1113 556 -1537 762 -1565 762 -21 0 -2022 -990 -2015 -997 9 -8 4421 -2203 4430 -2203 21 0 4427 2204 4420 2211 -10 8 -2008 1009 -2014 1008 -2 0 -542 -270 -1199 -599z"/>
@@ -19,7 +19,7 @@ const Header = () => {
               </g>
             </svg>
 
-            <svg xmlns="http://www.w3.org/2000/svg" className='text-indigo-800' version="1.0" height="50" viewBox="0 0 888.000000 980.000000" preserveAspectRatio="xMidYMid meet">
+            <svg xmlns="http://www.w3.org/2000/svg" className='text-indigo-800 hover:opacity-70' version="1.0" height="50" viewBox="0 0 888.000000 980.000000" preserveAspectRatio="xMidYMid meet">
               <g transform="translate(0.000000,980.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
               <path d="M2895 9027 c-2206 -1100 -2856 -1428 -2852 -1441 5 -16 430 -231 2499 -1267 l1898 -949 2217 1109 2218 1108 -2213 1107 c-1216 608 -2213 1106 -2214 1106 -2 0 -700 -348 -1553 -773z"/>
               <path d="M5650 5300 c-657 -329 -1201 -599 -1207 -599 -7 -1 -390 187 -850 417 -1113 556 -1537 762 -1565 762 -21 0 -2022 -990 -2015 -997 9 -8 4421 -2203 4430 -2203 21 0 4427 2204 4420 2211 -10 8 -2008 1009 -2014 1008 -2 0 -542 -270 -1199 -599z"/>
@@ -27,7 +27,7 @@ const Header = () => {
               </g>
             </svg>
 
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" height="45" viewBox="0 0 888.000000 980.000000" preserveAspectRatio="xMidYMid meet">
+            <svg xmlns="http://www.w3.org/2000/svg" className='hover:opacity-70' version="1.0" height="45" viewBox="0 0 888.000000 980.000000" preserveAspectRatio="xMidYMid meet">
               <g transform="translate(0.000000,980.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
               <path d="M2895 9027 c-2206 -1100 -2856 -1428 -2852 -1441 5 -16 430 -231 2499 -1267 l1898 -949 2217 1109 2218 1108 -2213 1107 c-1216 608 -2213 1106 -2214 1106 -2 0 -700 -348 -1553 -773z"/>
               <path d="M5650 5300 c-657 -329 -1201 -599 -1207 -599 -7 -1 -390 187 -850 417 -1113 556 -1537 762 -1565 762 -21 0 -2022 -990 -2015 -997 9 -8 4421 -2203 4430 -2203 21 0 4427 2204 4420 2211 -10 8 -2008 1009 -2014 1008 -2 0 -542 -270 -1199 -599z"/>
@@ -46,10 +46,10 @@ const Header = () => {
         </div>
 
         <nav className='hidden sm:block'>
-          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/">About</Link></span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/experience">Experience</Link></span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/contact">Contact</Link></span>
-          <span className='text-gray-600 font-semibold px-2 mx-1 hover:underline'><a className='text-decoration-indigo' href={resume} target="_blank" 
+          <span className='text-gray-600 text-lg font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/">About</Link></span>
+          <span className='text-gray-600 text-lg font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/experience">Experience</Link></span>
+          <span className='text-gray-600 text-lg font-semibold px-2 mx-1 hover:underline'><Link className='text-decoration-indigo' to="/contact">Contact</Link></span>
+          <span className='text-gray-600 text-lg font-semibold px-2 mx-1 hover:underline'><a className='text-decoration-indigo' href={resume} target="_blank" 
                 rel="noopener noreferrer">Resume</a></span>
         </nav>
 
