@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react'
+import Modal from './Modal';
 
 const ImageCard = (props) => {
+  const [showModal, setModal] = useState(false);
+
   return (
     <div className="max-w-sm md:max-w-md md:w-full py-5 px-3 md:px-7 my-7 md:mx-5 bg-gray-100 rounded overflow-hidden shadow-lg">
       <section className='flex justify-center'>
@@ -19,6 +22,10 @@ const ImageCard = (props) => {
           return <span className="inline-block bg-gray-200 my-1 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#{tag}</span>
         })}
       </div>
+
+      <Modal
+      
+      />
     </div>
   )
 };

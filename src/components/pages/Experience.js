@@ -17,6 +17,20 @@ const Experience = () => {
           title = 'Trace Taiwan'
           writeUp='A web application where users can find, add, save, and edit information and photos about River traces.'
           tags={['Rails', 'JavaScript', 'Heroku', 'TailwindCSS', 'PostGres SQL', 'GoogleMapsAPI']}
+          carousel = {
+            <ExperienceCarousel 
+              imgs={[
+                {
+                  img: traceOutline,
+                  writeUp: 'THIS IS THE OUTLINE OF THE TRACE'
+                },
+                {
+                  img: hireFullstackImage,
+                  writeUp: 'This is another write up to test this'
+                }
+              ]}
+            />
+          }
         />
 
         <ImageCard
@@ -35,32 +49,8 @@ const Experience = () => {
           tags={['Mastery Based Learning', '1500 hours', 'Full-Stack Development']}
         />
 
-        <ImageCard
-          img = {hireFullstackImage}
-          title = 'THIS IS THE TITLE'
-          writeUp='This is the write up'
-          tags={['gino', 'dog', 'cat']}
-        />
 
-        <ImageCard
-          img = {hireFullstackImage}
-          title = 'THIS IS THE TITLE'
-          writeUp='This is the write up'
-          tags={['gino', 'dog', 'cat']}
-        />
-
-        <ExperienceCarousel 
-          imgs={[
-            {
-              img: traceOutline,
-              writeUp: 'THIS IS THE OUTLINE OF THE TRACE'
-            },
-            {
-              img: hireFullstackImage,
-              writeUp: 'This is another write up to test this'
-            }
-          ]}
-        />
+        
    
       </div>
     </div>
