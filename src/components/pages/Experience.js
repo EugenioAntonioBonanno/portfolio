@@ -75,9 +75,6 @@ const Experience = () => {
           tags={['Mastery Based Learning', '1500 hours', 'Full-Stack Development']}
         />
 
-
-        
-   
       </div>
       <ToastContainer />
     </div>

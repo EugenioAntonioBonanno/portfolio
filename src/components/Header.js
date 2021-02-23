@@ -57,7 +57,7 @@ const Header = () => {
         setOpen={setOpen}
       />
 
-      <div className="fixed top-6 right-4 sm:hidden z-40">
+      <div onClick={()=> {setOpen(!open)}} className="fixed top-6 right-4 sm:hidden z-40">
         <button type="button" id='toggle-menu-options' className="block text-gray-600 z-30 hover:text-grey-800 focus:text-grey-900 focus:outline-none">
           <svg className="h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
             <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
