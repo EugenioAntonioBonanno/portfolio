@@ -39,7 +39,7 @@ const About = () => {
 
         <div className='w-full max-w-lg'>
           <div className=''>
-            <h2 className='text-4xl my-5 font-bold text-gray-600'>My Skills</h2>
+            <h2 className='text-4xl my-5 font-bold text-gray-600'>What are my Skills?</h2>
             <div className='ml-3 shadow-sm'>
               <ProgressBar 
                 percentage='80' 

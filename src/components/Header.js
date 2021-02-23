@@ -5,8 +5,8 @@ import resume from '../assets/gino_resume.pdf';
 
 const Header = () => {
   return (
-    <header className="bg-indigo-100 py-3 w-screen sticky z-20 top-0 shadow-md flex justify-center items-center">
-      <div className="flex w-full max-w-screen-2xl items-center justify-between px-4 sm:px-4">
+    <header className="bg-indigo-100 w-screen sticky z-20 top-0 shadow-md flex justify-center items-center">
+      <div className="flex w-full max-w-screen-2xl py-3 items-center justify-between px-4 sm:px-4">
 
         <div>
           <Link to='/' className="flex text-gray-500">
