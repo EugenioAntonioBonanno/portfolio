@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import resume from '../assets/gino_resume.pdf';
+import BurgerMenu from './BurgerMenu';
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
       <header className="bg-indigo-100 w-screen sticky z-20 top-0 shadow-md flex justify-center items-center">
@@ -48,16 +51,8 @@ const Header = () => {
 
         </div>
       </header>
-      <nav id='hamburer-nav' className='fixed z-20 shadow w-64 hidden bg-indigo-100 top-0 right-0'>
-        <div className='grid grid-cols-1 mt-16 justify-items-center'>
-          <Link className='my-10 font-bold text-2xl text-indigo-700 hover:underline' to="/">About</Link>
-          <Link className='my-10 font-bold text-2xl text-indigo-700 hover:underline' to="/experience">Experience</Link>
-          <Link className='my-10 font-bold text-2xl text-indigo-700 hover:underline' to="/contact">Contact</Link>
-          <a className='my-10 font-bold text-2xl text-indigo-700 hover:underline' href={resume} target="_blank" 
-                rel="noopener noreferrer">Resume</a>
-        </div>
 
-      </nav>
+      <BurgerMenu />
 
       <div className="fixed top-6 right-4 sm:hidden z-40">
         <button type="button" id='toggle-menu-options' className="block text-gray-600 z-30 hover:text-grey-800 focus:text-grey-900 focus:outline-none">
