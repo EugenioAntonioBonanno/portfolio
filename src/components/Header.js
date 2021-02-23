@@ -52,7 +52,10 @@ const Header = () => {
         </div>
       </header>
 
-      <BurgerMenu />
+      <BurgerMenu
+        open={open}
+        setOpen={setOpen}
+      />
 
       <div className="fixed top-6 right-4 sm:hidden z-40">
         <button type="button" id='toggle-menu-options' className="block text-gray-600 z-30 hover:text-grey-800 focus:text-grey-900 focus:outline-none">
