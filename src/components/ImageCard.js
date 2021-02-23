@@ -22,9 +22,9 @@ const ImageCard = (props) => {
           return <span className="inline-block bg-gray-200 my-1 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2">#{tag}</span>
         })}
       </div>
-      <div>
+      {/* <div>
         <button onClick={() => setModal(true)} className='float-right'>Learn more</button>
-      </div>
+      </div> */}
 
       <Modal children={props.carousel} modal={modal} show={() => setModal(true)} handleClose={() => setModal(false)}>
       </Modal>

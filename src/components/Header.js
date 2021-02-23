@@ -6,10 +6,15 @@ import BurgerMenu from './BurgerMenu';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const showHideClassName = open ? "hidden sm:flex" : "block";
+
+  const switchNav = () => {
+    setOpen(!open);
+  }
 
   return (
-    <div>
-      <header className="bg-indigo-100 w-screen sticky z-20 top-0 shadow-md flex justify-center items-center">
+    <div className='mb-20'>
+      <header className={`bg-indigo-100 w-screen fixed z-20 top-0 shadow-md flex justify-center items-center ${showHideClassName}`}>
         <div className="flex w-full max-w-screen-2xl py-3 items-center justify-between px-4 sm:px-4">
 
           <div>
@@ -57,7 +62,7 @@ const Header = () => {
         setOpen={setOpen}
       />
 
-      <div onClick={()=> {setOpen(!open)}} className="fixed top-6 right-4 sm:hidden z-40">
+      <div onClick={()=> {switchNav()}} className="fixed top-6 right-4 sm:hidden z-40">
         <button type="button" id='toggle-menu-options' className="block text-gray-600 z-30 hover:text-grey-800 focus:text-grey-900 focus:outline-none">
           <svg className="h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
             <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
