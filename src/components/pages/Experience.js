@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ImageCard from '../ImageCard';
 import ExperienceCarousel from '../Carousel';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 import hireFullstackImage from '../../assets/hire-fullstack-image.png';
 import traceOutline from '../../assets/traceoutline.png';
@@ -9,6 +12,24 @@ import launchSchool from '../../assets/outlineLaunch.png';
 
 
 const Experience = () => {
+
+  const toastifyConstruction = () => {
+    toast('This area is currently under construction. Please check back shortly for even more information.', {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,  
+      draggable: false,
+      className: 'bg-red-400 rounded font-semibold text-gray-600',
+      toastId: 'notifyToast'
+    });
+  };
+
+  useEffect(() =>{
+    toastifyConstruction();
+  });
+
   return (
     <div>
       <div className='flex flex-wrap md:w-full mt-10 md:mt-16 justify-center md:px-3'>
@@ -57,8 +78,8 @@ const Experience = () => {
         
    
       </div>
+      <ToastContainer />
     </div>
-    
   )
 };
 
