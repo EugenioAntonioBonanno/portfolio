@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import ImageCard from '../ImageCard';
 import ExperienceCarousel from '../Carousel';
+import UnderConstruction from '../UnderConstruction';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -14,7 +15,7 @@ import launchSchool from '../../assets/outlineLaunch.png';
 const Experience = () => {
 
   const toastifyConstruction = () => {
-    toast('This area is currently under construction. Please check back shortly for even more information.', {
+    toast(<UnderConstruction />, {
       position: 'top-right',
       autoClose: 5000,
       hideProgressBar: true,
