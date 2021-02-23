@@ -6,7 +6,6 @@ import UnderConstruction from '../UnderConstruction';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
-import hireFullstackImage from '../../assets/hire-fullstack-image.png';
 import traceOutline from '../../assets/traceoutline.png';
 import orderMagik from '../../assets/orderMagik.png';
 import launchSchool from '../../assets/outlineLaunch.png';
@@ -45,10 +44,6 @@ const Experience = () => {
                 {
                   img: traceOutline,
                   writeUp: 'THIS IS THE OUTLINE OF THE TRACE'
-                },
-                {
-                  img: hireFullstackImage,
-                  writeUp: 'This is another write up to test this'
                 },
                 {
                   img: orderMagik,

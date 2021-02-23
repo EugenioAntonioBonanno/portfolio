@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 import ProgressBar from '../ProgressBar';
 
-import me from '../../assets/me.png';
+import mePng from '../../assets/smallme.png';
+import meWebp from '../../assets/smallme.webp'
 import SvgInfo from '../SvgInfo';
 import Breifcase from '../svgs/Briefcase';
 import Lightning from '../svgs/Lightning';
@@ -21,7 +22,7 @@ const About = () => {
         <div className='grid-cols-1 max-w-lg my-7 auto-cols-min'>
           
           <div className='w-full flex justify-center'>
-            <img src={me} alt="full-stack" className=' max-h-96'></img>
+            <img src={meWebp} alt="full-stack" className=' max-h-96'></img>
           </div>
           <div className='w-full flex mb-5 justify-center'>
             <h1 className='text-5xl font-semibold text-gray-600'>Who am I?</h1>
