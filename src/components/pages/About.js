@@ -22,7 +22,10 @@ const About = () => {
         <div className='grid-cols-1 max-w-lg my-7 auto-cols-min'>
           
           <div className='w-full flex justify-center'>
-            <img src={meWebp} alt="full-stack" className=' max-h-96'></img>
+          <picture>
+                <source src={meWebp}/>
+                <img src={mePng} alt="of me" />
+          </picture>
           </div>
           <div className='w-full flex mb-5 justify-center'>
             <h1 className='text-5xl font-semibold text-gray-600'>Who am I?</h1>
