@@ -18,7 +18,7 @@ const About = () => {
 
       <div className='block md:flex justify-around mx-3 mt-12'>
 
-        <div className='grid-cols-1 max-w-lg mb-7 auto-cols-min'>
+        <div className='grid-cols-1 max-w-lg my-7 auto-cols-min'>
           
           <div className='w-full flex justify-center'>
             <img src={me} alt="full-stack" className=' max-h-96'></img>
@@ -26,7 +26,7 @@ const About = () => {
           <div className='w-full flex mb-5 justify-center'>
             <h1 className='text-5xl font-semibold text-gray-600'>Who am I?</h1>
           </div>
-          <div className='w-full flex mx-2 justify-center'>
+          <div className='w-full mb-16 md:mb-0 flex mx-2 justify-center'>
             <p className='text-center text-lg text-gray-600'>
               I am a full-stack developer with a genuine love for coding (and my laptop). I enjoy solving interesting problems,
               and building user friendly web applications. If that sounds like something you need help with please dont hesistate to 
@@ -37,9 +37,9 @@ const About = () => {
         </div>
   
 
-        <div className='w-full max-w-lg'>
+        <div className='w-full max-w-lg mb-16 md:mb-0'>
           <div className=''>
-            <h2 className='text-4xl my-5 font-bold text-gray-600'>What are my Skills?</h2>
+            <h2 className='text-4xl mb-5 font-bold text-gray-600'>What are my Skills?</h2>
             <div className='ml-3 shadow-sm'>
               <ProgressBar 
                 percentage='80' 
