@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <div className='mb-20'>
-      <header className={`bg-indigo-100 w-screen fixed z-20 top-0 shadow-md flex justify-center items-center ${showHideClassName}`}>
+      <header className={`bg-indigo-100 w-screen fixed top-0 shadow-md flex z-20 justify-center items-center ${showHideClassName}`}>
         <div className="flex w-full max-w-screen-2xl py-3 items-center justify-between px-4 sm:px-4">
 
           <div>
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
       </header>
 
-      <BurgerMenu
+      <BurgerMenu className='z-30'
         open={open}
         setOpen={setOpen}
       />
@@ -66,7 +66,6 @@ const Header = () => {
         <button type="button" id='toggle-menu-options' className="block text-gray-600 z-30 hover:text-grey-800 focus:text-grey-900 focus:outline-none">
           <div id='svg-container'>
 
-
             <section className={open ? 'hidden' : 'block'} >
               <svg className="h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
                 <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
@@ -74,10 +73,11 @@ const Header = () => {
             </section>
 
             <section className={open ? 'block' : 'hidden'}>
-              <svg id='close-svg' class=" h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a11 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828"></path>
+              <svg id='close-svg' className="h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
+                <path fillRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a11 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828"></path>
               </svg>
             </section>
+            
           </div>
         </button>
       </div>
