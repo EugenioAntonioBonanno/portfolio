@@ -64,14 +64,24 @@ const Header = () => {
 
       <div onClick={()=> {switchNav()}} className="fixed top-6 right-4 sm:hidden z-40">
         <button type="button" id='toggle-menu-options' className="block text-gray-600 z-30 hover:text-grey-800 focus:text-grey-900 focus:outline-none">
-          <svg className="h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
-            <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-          </svg>
+          <div id='svg-container'>
+
+
+            <section className={open ? 'hidden' : 'block'} >
+              <svg className="h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
+                <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+              </svg>
+            </section>
+
+            <section className={open ? 'block' : 'hidden'}>
+              <svg id='close-svg' class=" h-6 w-6 mr-3 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a11 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828"></path>
+              </svg>
+            </section>
+          </div>
         </button>
       </div>
-
     </div>
-
   )
 };
 
