@@ -33,7 +33,7 @@ const About = () => {
           <div className='w-full mb-16 md:mb-0 flex mx-2 justify-center'>
             <p className='text-center text-lg text-gray-600'>
               I am a full-stack developer with a genuine love for coding (and my laptop). I enjoy solving interesting problems,
-              and building user friendly web applications. If that sounds like something you need help with please dont hesistate to 
+              and building user friendly web applications. If that sounds like something you need help with please don't hesitate to 
               <span> </span><Link to='/contact' className="inline underline text-indigo-800">contact me</Link>.
             </p>
           </div>

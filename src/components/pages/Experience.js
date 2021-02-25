@@ -37,7 +37,7 @@ const Experience = () => {
           img = {traceOutline}
           title = 'Trace Taiwan'
           writeUp='A web application where users can find, add, save, and edit information and photos about River traces.'
-          tags={['Rails', 'JavaScript', 'Heroku', 'TailwindCSS', 'PostGres SQL', 'GoogleMapsAPI']}
+          tags={['Rails', 'JavaScript', 'Heroku', 'TailwindCSS', 'PostgreSQL', 'GoogleMapsAPI']}
           carousel={
             <ExperienceCarousel 
               imgs={[

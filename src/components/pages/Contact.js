@@ -369,7 +369,7 @@ const Contact = () => {
       </div>
       <ToastContainer />
       <div className='flex justify-center w-full'>
-        <section className='lg:flex max-w-screen-lg w-full justify-between mt-16 lg:mt-24 md:mx-3'>
+        <section className='lg:flex max-w-screen-lg w-full justify-between mt-16 mb-7 lg:mt-24 md:mx-3'>
 
           <div className='mb-10 lg:mb-0 flex justify-center'>
             <a href="https://stackoverflow.com/users/10235667/gino" className='hover:opacity-70'>
