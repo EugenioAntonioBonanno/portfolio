@@ -56,9 +56,9 @@ const Experience = () => {
 
         <ImageCard
           img={orderMagik}
-          title = 'Order Magik'
-          writeUp='An embedded Shopify application where users can update the fulfillment status of your orders in 
-                  bulk by uploading spreadsheet (CSV) files.'
+          title = 'OrderMagik'
+          writeUp='An embedded Shopify application where users can update the fulfillment status, and configure the fulfillment options
+           of their orders in bulk by uploading spreadsheet (CSV) files.'
           tags={['Rails', 'JavaScript', 'TailwindCSS', 'Shopify','MongoDB', 'EmbeddedApp', 'SASS']}
         />
 
