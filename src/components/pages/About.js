@@ -116,7 +116,7 @@ const About = () => {
             svg={<Mobile
                   color={svgColor}
                 />}
-            content={'Application that just work, regardless of screen size.'}
+            content={'Applications that just work, regardless of screen size.'}
             title={'Responsive'}
           />
           <SvgInfo
